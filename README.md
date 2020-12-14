@@ -53,7 +53,7 @@ Explanations of each element are as followings.
 * **KNNDecision.m** is the MATLAB file to do the progonosis prediction task of COVID-19 patients.
 
 ## Usage
-1. Put all the test ultrasound images in the folder **score_database** .
-2. Run **python Main.py** to run the scoring task.
-3. Run **xxx.m** to do the classification task of mild and severe COVID-19 patients.
-4. Run **xxy.m** to do the prognosis prediction task of COVID-19 patients.
+1. Put all the test ultrasound images in the folder **score_database**.  
+2. Run **python Main.py** to run the scoring task.  
+3. Run **xxx.m** to do the classification task of mild and severe COVID-19 patients.  
+4. Run **xxy.m** to do the prognosis prediction task of COVID-19 patients.  
