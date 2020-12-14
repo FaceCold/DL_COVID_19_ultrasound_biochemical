@@ -52,9 +52,8 @@ Explanations of each element are as followings.
 * **svmThreshold_CNN.m** is the MATLAB file to do the classification task of mild and severe cases.
 * **KNNDecision.m** is the MATLAB file to do the progonosis prediction task of COVID-19 patients.
 
-
 ## Usage
-* Use the **runTest()** function in the **Main.py** to obtain the probablities of each score (0, 1, 2, 3) for certain ultrasound images.
-* Run **python Main.py** to run the scoring task.
-* Run **xxx.m** to do the classification task of mild and severe COVID-19 patients.
-* Run **xxy.m** to do the prognosis prediction task of COVID-19 patients.
+1. Put all the test ultrasound images in the folder **score_database** .
+2. Run **python Main.py** to run the scoring task.
+3. Run **xxx.m** to do the classification task of mild and severe COVID-19 patients.
+4. Run **xxy.m** to do the prognosis prediction task of COVID-19 patients.
