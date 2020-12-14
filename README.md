@@ -39,6 +39,11 @@ Explanations of each element are as followings.
 * For the classification task of mild and severe cases, AI model outputs a binary value of 0 or 1. 0 stands for mild cases and 1 stands for severe cases.
 * For the prognosis prediction task, AI model outputs a binary value of 0 or 1. 0 stands for survival and 1 stands for death.
 
+### File explanation
+* **score_database** is the folder containing ultrasound images.
+* **dataset** is the folder containing the txt format of test set of ultrasound images.
+* **XXX.tar** is the weights of our AI model.
+
 ## Usage
 * Use the **runTest()** function in the **Main.py** to obtain the probablities of each score (0, 1, 2, 3) for certain ultrasound images.
 * Run **python Main.py** to run the scoring task.
