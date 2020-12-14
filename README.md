@@ -45,7 +45,13 @@ Explanations of each element are as followings.
 * **20201020.tar** is the weights of our AI model.
 * **cams.py** is the python file to visualize the output of AI model.
 * **ChexnetTrainer.py** is the python file to implement the AI model.
-* **DatasetGenerator.py** is the python file to 
+* **DatasetGenerator.py** is the python file to split data into train set and test set.
+* **DensenetModel.py** is the python file to construct the backbone of AI Model (Resnet18).
+* **Main.py** is the python file to run the scoring task.
+* **preprocess.m** is the MATLAB file to do some data transform.
+* **svmThreshold_CNN.m** is the MATLAB file to do the classification task of mild and severe cases.
+* **KNNDecision.m** is the MATLAB file to do the progonosis prediction task of COVID-19 patients.
+
 
 ## Usage
 * Use the **runTest()** function in the **Main.py** to obtain the probablities of each score (0, 1, 2, 3) for certain ultrasound images.
