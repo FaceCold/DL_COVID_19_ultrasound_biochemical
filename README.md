@@ -14,14 +14,20 @@ Ultrasound images are in jpg format. Biochemical indices are in xlsx format.
 * To do the scoring task of ultrasound images, ultrasound images in jpg format are expected to be input to our AI model.
 * To do the prognosis prediction of COVID-19 patients, a xlsx file in following format is expected.
   
-| patient ID   | US    |  LYMPH      |  CRP      |  LDH     |  PCT      |  IL-6     |
-| -----:       | -----:| -----:      | -----:    | -----:   | -----:    | -----:    |
-| 1            | 1.28  |  1.91       |  3.50     |  195     |   0.03    |   3.3     |
-| 2            | 0.63  |  1.88       |  3.07     |  285     |           |   1.5     |
-| 3            | 0.14  |  2.21       |  2.13     |          |   0.08    |   2.37    |
+| patient ID   | US        |  LYMPH      |  CRP       |  LDH      |  PCT       |  IL-6      |
+| -----:       | -----:    | -----:      | -----:     | -----:    | -----:     | -----:     |
+| 1            | 1.28      |  1.91       |  3.50      |  195      |   0.03     |   3.3      |
+| 2            | 0.63      |  1.88       |  3.07      |  285      |            |   1.5      |
+| 3            | 0.14      |  2.21       |  2.13      |           |   0.08     |   2.37     |
 
-If the value of certain indices is unknow or missing, the cell is left empty.
+If the value of certain indices is unknow or missing, the cell is left empty.  
+Explanations of each element are as followings.
 
+| Element   | Data type        |  Unit      |  Explanation       |
+| -----:       | -----:    | -----:      | -----:     | 
+| Patient ID   | intiger      |  none      |  ID of patients      | 
+| US            | float      |  none       |  Ultrasound Scores, the average ultrasound scores of each patient       | 
+| LYMPH            | float      |  10^9/L       |  The absolute value of Lymphocyte    | 
 
 ## Usage
 * Use the **runTest()** function in the **Main.py** to obtain the probablities of each score (0, 1, 2, 3) for certain ultrasound images.
