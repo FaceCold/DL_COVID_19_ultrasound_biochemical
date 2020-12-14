@@ -42,7 +42,10 @@ Explanations of each element are as followings.
 ### File explanation
 * **score_database** is the folder containing ultrasound images.
 * **dataset** is the folder containing the txt format of test set of ultrasound images.
-* **XXX.tar** is the weights of our AI model.
+* **20201020.tar** is the weights of our AI model.
+* **cams.py** is the python file to visualize the output of AI model.
+* **ChexnetTrainer.py** is the python file to implement the AI model.
+* **DatasetGenerator.py** is the python file to 
 
 ## Usage
 * Use the **runTest()** function in the **Main.py** to obtain the probablities of each score (0, 1, 2, 3) for certain ultrasound images.
