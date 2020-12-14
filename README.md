@@ -1,4 +1,4 @@
-# DL_COVID_19_ultrasound_sound
+# Assessment and Prognosis Prediction of COVID-19 Patients Using Lung Ultrasound Images
 This package provides an implementation of the assessment and prognosis prediction of COVID-19 patients using lung ultrasound images.
 
 ## Prerequisites
@@ -8,11 +8,12 @@ This package provides an implementation of the assessment and prognosis predicti
 * MATLAB R2019b
 
 ## data
-Ultrasound images are in jpg format. Biochemical indices are in xlsx format.
+Ultrasound images are in jpg format. Biochemical indices are in xlsx format. Intermediate files are in txt or mat format.
 
-### input data
+### Input data
 * To do the scoring task of ultrasound images, ultrasound images in jpg format are expected to be input to our AI model.
-* To do the prognosis prediction of COVID-19 patients, a xlsx file in following format is expected.
+* To do the classification task of mild and severe cases, a txt file containing scoring results of each ultrasound image is expected.
+* To do the prognosis prediction task of COVID-19 patients, a xlsx file in following format is expected.
   
 | patient ID   | US        |  LYMPH      |  CRP       |  LDH      |  PCT       |  IL-6      |
 | -----:       | -----:    | -----:      | -----:     | -----:    | -----:     | -----:     |
@@ -23,11 +24,20 @@ Ultrasound images are in jpg format. Biochemical indices are in xlsx format.
 If the value of certain indices is unknow or missing, the cell is left empty.  
 Explanations of each element are as followings.
 
-| Element   | Data type        |  Unit      |  Explanation       |
-| -----:       | -----:    | -----:      | -----:     | 
-| Patient ID   | intiger      |  none      |  ID of patients      | 
-| US            | float      |  none       |  Ultrasound Scores, the average ultrasound scores of each patient       | 
-| LYMPH            | float      |  10^9/L       |  The absolute value of Lymphocyte    | 
+| Element          | Data type    |  Unit       |  Explanation       |
+| -----:           | -----:       | -----:      | :-----             | 
+| Patient ID       | intiger      |  none       |  ID of patients      | 
+| US               | float        |  none       |  Ultrasound Scores, the average ultrasound scores of each patient obtained from AI model  | 
+| LYMPH            | float        |  10^9/L     |  The absolute value of Lymphocyte    | 
+| CRP              | float        |  mg/L       |  C-reactive protein    | 
+| LDH              | float        |  IU/L       |  Lactate dehydrogenase   | 
+| PCT              | float        |  ng/ml      |  Procalcitonin    | 
+| IL-6             | float        |  pg/ml      |  Interleukin-6    | 
+
+### Output data
+* For the scoring task, AI model outputs the probability of score 0, 1, 2, 3. We choose the score with highest probability as the final score of certain ultrasound images.
+* For the classification task of mild and severe cases, AI model outputs a binary value of 0 or 1. 0 stands for mild cases and 1 stands for severe cases.
+* For the prognosis prediction task, AI model outputs a binary value of 0 or 1. 0 stands for survival and 1 stands for death.
 
 ## Usage
 * Use the **runTest()** function in the **Main.py** to obtain the probablities of each score (0, 1, 2, 3) for certain ultrasound images.
