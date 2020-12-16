@@ -58,6 +58,17 @@ Explanations of each element are as followings.
     `python Main.py`  
 3. Copy the true and predicted scoring results into **gt.txt** and **pred.txt** respectively.
 4. Run **preprocess.m** using MATLAB2019b and save the variate ***pred_after*** to **pred.mat**.
-5. 
+5. Run **svmThreshold_CNN.m** using MATLAB2019b to do the the classification task of mild and severe cases.
+6. Read the xlsx file of patients and save the 6 biochemical indices along with the ultrasound scores to **DrawScatter.mat**.
+7. Run **KNNDecision.m** using MATLAB2019b to do the prognosis prediction task.
 
+## Evaluation
+Evaluations are included in **svmThreshold_CNN.m** and **KNNDecision.m**.  
+Following indices are used for evaluations.
 
+| Index              |       Explaination       |
+| -----:             |        -----:            |
+| Accuracy           |         The percentage of correctly predicted results in the total sample           | 
+| Precision          |         The proportion of correctly classified positive samples among all samples predicted to be positive            |
+| Recall/Sensitivity |         The probability of predicting a correctly classified positive sample among all actually positive samples            |
+| F1socre            |         The comprehensive measure of model precision and recall            |
