@@ -74,4 +74,4 @@ Following indices are used for evaluations.
 | F1socre            |         The comprehensive measure of model precision and recall            |
 
 ## Disclaimer
-Our work is for research purpose and is not approved for clinical use.
+Our work is only for research purpose and is not approved for clinical use.
