@@ -72,3 +72,6 @@ Following indices are used for evaluations.
 | Precision          |         The proportion of correctly classified positive samples among all samples predicted to be positive            |
 | Recall/Sensitivity |         The probability of predicting a correctly classified positive sample among all actually positive samples            |
 | F1socre            |         The comprehensive measure of model precision and recall            |
+
+## Disclaimer
+Our work is for research purpose and is not approved for clinical use.
