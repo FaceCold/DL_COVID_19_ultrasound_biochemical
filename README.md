@@ -67,7 +67,7 @@ Evaluations are included in **svmThreshold_CNN.m** and **KNNDecision.m**.
 Following indices are used for evaluations.
 
 | Index              |       Explaination       |
-| -----:             |        -----:            |
+| :-----             |        :-----            |
 | Accuracy           |         The percentage of correctly predicted results in the total sample           | 
 | Precision          |         The proportion of correctly classified positive samples among all samples predicted to be positive            |
 | Recall/Sensitivity |         The probability of predicting a correctly classified positive sample among all actually positive samples            |
