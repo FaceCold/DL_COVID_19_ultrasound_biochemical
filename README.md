@@ -57,4 +57,7 @@ Explanations of each element are as followings.
 2. Run  
     `python Main.py`  
 3. Copy the true and predicted scoring results into **gt.txt** and **pred.txt** respectively.
-4. Run **preprocess.m** using MATLAB2019b and save the variate pred_after to **pred.mat**.
+4. Run **preprocess.m** using MATLAB2019b and save the variate ***pred_after*** to **pred.mat**.
+5. 
+
+
