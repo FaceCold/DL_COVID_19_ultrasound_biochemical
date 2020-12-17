@@ -11,7 +11,14 @@ This package provides an implementation of the assessment and prognosis predicti
 Ultrasound images are in jpg format. Biochemical indices are in xlsx format. Intermediate files are in txt or mat format.
 
 ### Input data
-* To do the scoring task of ultrasound images, ultrasound images in jpg format are expected to be input to our AI model.
+* To do the scoring task of ultrasound images, ultrasound images in jpg format are expected to be input to our AI model. And the name of ultrasound images is expected to be named after *patientID_location_score*, *6_R2_0.jpg* for example. Plus, a single txt file containing file names and labels of all the images is also expected. The txt file should be organized as following.
+
+    1_L1_2.jpg 0 0 1 0  
+    1_L2_1.jpg 0 1 0 0  
+    2_L1_0.jpg 1 0 0 0  
+    2_L2_0.jpg 1 0 0 0  
+    ...  
+    Where 1 0 0 0 stands for score 0, 0 1 0 0 stands for score 1, 0 0 1 0 stands for score 2, 0 0 0 1 stands for score 3.
 * To do the classification task of mild and severe cases, a txt file containing scoring results of each ultrasound image is expected.
 * To do the prognosis prediction task of COVID-19 patients, a xlsx file in following format is expected.
   
