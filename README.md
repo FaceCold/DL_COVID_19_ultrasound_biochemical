@@ -49,11 +49,11 @@ Explanations of each element are as followings.
 ### File explanation
 * **score_database** is the folder containing ultrasound images.
 * **dataset** is the folder containing the txt format of test set of ultrasound images.
-* **20201020.tar** is the weights of our AI model.
+* **ScoringModel.tar** is the weights of our AI model.
 * **cams.py** is the python file to visualize the output of AI model.
-* **ChexnetTrainer.py** is the python file to implement the AI model.
+* **NetTester.py** is the python file to implement the AI model.
 * **DatasetGenerator.py** is the python file to split data into train set and test set.
-* **DensenetModel.py** is the python file to construct the backbone of AI Model (Resnet18).
+* **Models.py** is the python file to construct the backbone of AI Model (Resnet18).
 * **Main.py** is the python file to run the scoring task.
 * **preprocess.m** is the MATLAB file to do some data transform.
 * **svmThreshold_CNN.m** is the MATLAB file to do the classification task of mild and severe cases.
